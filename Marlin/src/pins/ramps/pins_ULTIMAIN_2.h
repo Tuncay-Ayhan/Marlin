@@ -103,7 +103,7 @@
 //
 #define TEMP_0_PIN                             8  // Analog Input
 #define TEMP_1_PIN                             9  // Analog Input
-#define TEMP_BED_PIN                          10  // Analog Input
+#define TEMP_BED_PIN                           0  // Analog Input - Changed To use the non-default thermistor port for the heated bed. For more information, visit: https://community.ultimaker.com/topic/10348-k-type-thermistor-on-um2-new-pin-assignment-and-code/
 
 //
 // Heaters / Fans

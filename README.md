@@ -1,3 +1,91 @@
+<p align="center"><img src="buildroot/share/pixmaps/logo/um2go.png" alt="Ultimaker logo" /></p>
+
+<h1 align="center">Ultimaker 2 Go - Marlin Firmware - 2023 Edtion</h1>
+
+This is the most recent unofficial  Ultimaker 2 Go Firmware, based on the latest bugfix-2.1.x branch. The configurations are based off the Ultimaker 2 provided by Marlin, as found [here](https://github.com/MarlinFirmware/Configurations).
+
+<i><u> The links below are not affiliated!</u></i>
+
+<h2>Hardware mods: </h2>
+<p>
+
+- [60W Silicone Heated Pad 100x100mm integrated NTC100K thermistor](https://nl.aliexpress.com/item/1005004519596065.html?channel=twinner)
+<br>Because the thermistor is not a PT100, I've used A0 on the Ultimaker 2.1.4 motherboard. The pin-number is changed accordingly in the config. For more information on this topic, [read this](https://community.ultimaker.com/topic/10348-k-type-thermistor-on-um2-new-pin-assignment-and-code/).
+
+- [Hot-End Isolator Coupler PTFE Tube for 1.75mm](https://nl.aliexpress.com/item/32677112434.html?channel=twinner)
+ 
+
+<h2>Config changes</h2>
+<p>
+I've used the Ultimaker 2 as the base config and changed everything to fit the Ultimaker 2 Go. I've also utilized some (new) Marlin firmware options, like:
+
+<hr>
+
+<h3>configuration.h</h3>
+
+- PIDTEMPBED = TRUE
+- PID_EDIT_MENU  = TRUE
+- PID_AUTOTUNE_MENU = TRUE
+- EXTRUDE_MAXLENGTH = 1000
+- X_MIN_POS = -16
+- LCD_BED_LEVELING = TRUE
+- LCD_BED_TRAMMING = TRUE
+- BED_TRAMMING_INSET_LFRB = { 20, 20, 20, 20 }
+- BED_TRAMMING_INCLUDE_CENTER = TRUE
+- BED_TRAMMING_LEVELING_ORDER { LF, RF }
+
+<h4>Preheat constants:</h4>
+
+	#define PREHEAT_1_LABEL       "PLA"
+	#define PREHEAT_1_TEMP_HOTEND 180
+	#define PREHEAT_1_TEMP_BED     60
+	#define PREHEAT_1_TEMP_CHAMBER  0
+	#define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
+
+	#define PREHEAT_2_LABEL       "PETG"
+	#define PREHEAT_2_TEMP_HOTEND 180
+	#define PREHEAT_2_TEMP_BED     60
+	#define PREHEAT_2_TEMP_CHAMBER  0
+	#define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+
+	#define PREHEAT_3_LABEL       "ABS"
+	#define PREHEAT_3_TEMP_HOTEND 180
+	#define PREHEAT_3_TEMP_BED     70
+	#define PREHEAT_3_TEMP_CHAMBER  0
+	#define PREHEAT_3_FAN_SPEED     0 // Value from 0 to 255
+
+- PRINTCOUNTER = TRUE
+- INDIVIDUAL_AXIS_HOMING_MENU = TRUE
+- INDIVIDUAL_AXIS_HOMING_SUBMENU = TRUE
+
+<hr>
+
+<h3>configuration_adv.h</h3>
+
+- CASE_LIGHT_ENABLE = TRUE
+- CASE_LIGHT_MENU = TRUE
+- NO_SD_AUTOSTART = TRUE
+- ONE_CLICK_PRINT = TRUE
+- SCROLL_LONG_FILENAMES = TRUE
+- BABYSTEPPING = TRUE
+- BABYSTEP_WITHOUT_HOMING = TRUE
+- BABYSTEP_ALWAYS_AVAILABLE = TRUE
+- FILAMENT_CHANGE_UNLOAD_LENGTH = 550
+- FILAMENT_CHANGE_FAST_LOAD_LENGTH = 520
+
+<br>
+
+<hr>
+
+<b>pins_ULTIMAIN_2.h</b>
+- TEMP_BED_PIN = 0
+
+<br>
+<hr>
+
+
+<br>
+
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
