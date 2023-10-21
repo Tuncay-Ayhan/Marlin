@@ -73,6 +73,7 @@ I've used the Ultimaker 2 as the base config and changed everything to fit the U
 - FILAMENT_CHANGE_UNLOAD_LENGTH = 550
 - FILAMENT_CHANGE_FAST_LOAD_LENGTH = 520
 - SOUND_ON_DEFAULT = FALSE
+- PWM_MOTOR_CURRENT { 1300, 1300, 1400 }
 
 <br>
 
