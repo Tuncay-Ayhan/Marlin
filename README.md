@@ -12,7 +12,7 @@ This is the most recent unofficial  Ultimaker 2 Go Firmware, based on the latest
 - [60W Silicone Heated Pad 100x100mm integrated NTC100K thermistor](https://nl.aliexpress.com/item/1005004519596065.html?channel=twinner)
 <br>Because the thermistor is not a PT100, I've used A0 on the Ultimaker 2.1.4 motherboard. The pin-number is changed accordingly in the config. For more information on this topic, [read this](https://community.ultimaker.com/topic/10348-k-type-thermistor-on-um2-new-pin-assignment-and-code/).
 
-- [Hot-End Isolator Coupler PTFE Tube for 1.75mm](https://nl.aliexpress.com/item/32677112434.html?channel=twinner)
+- [Hot-End Isolator Coupler PTFE Tube for 1.75mm](https://nl.aliexpress.com/item/32677112434.html?channel=twinner) (Only recommended if you're planning to use strictly filament with a diameter of 1.75mm . You'll need to change your filament diameter in your slicer of choice. The firmware still expects 2.85mm.
  
 
 <h2>Config changes</h2>
