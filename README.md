@@ -37,19 +37,19 @@ I've used the Ultimaker 2 as the base config and changed everything to fit the U
 <h4>Preheat constants:</h4>
 
 	#define PREHEAT_1_LABEL       "PLA"
-	#define PREHEAT_1_TEMP_HOTEND 180
+	#define PREHEAT_1_TEMP_HOTEND 200
 	#define PREHEAT_1_TEMP_BED     60
 	#define PREHEAT_1_TEMP_CHAMBER  0
 	#define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 	#define PREHEAT_2_LABEL       "PETG"
-	#define PREHEAT_2_TEMP_HOTEND 180
+	#define PREHEAT_2_TEMP_HOTEND 220
 	#define PREHEAT_2_TEMP_BED     60
 	#define PREHEAT_2_TEMP_CHAMBER  0
 	#define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 	#define PREHEAT_3_LABEL       "ABS"
-	#define PREHEAT_3_TEMP_HOTEND 180
+	#define PREHEAT_3_TEMP_HOTEND 230
 	#define PREHEAT_3_TEMP_BED     70
 	#define PREHEAT_3_TEMP_CHAMBER  0
 	#define PREHEAT_3_FAN_SPEED     0 // Value from 0 to 255
@@ -72,6 +72,7 @@ I've used the Ultimaker 2 as the base config and changed everything to fit the U
 - BABYSTEP_ALWAYS_AVAILABLE = TRUE
 - FILAMENT_CHANGE_UNLOAD_LENGTH = 550
 - FILAMENT_CHANGE_FAST_LOAD_LENGTH = 520
+- SOUND_ON_DEFAULT = FALSE
 
 <br>
 
