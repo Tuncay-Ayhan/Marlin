@@ -694,9 +694,9 @@
   #else
     // TUNE Ultimaker 2 Hotend
     // UM2Go Stock
-    #define DEFAULT_Kp  17.5
-    #define DEFAULT_Ki   1.63
-    #define DEFAULT_Kd 47.10
+    #define DEFAULT_Kp  16.4
+    #define DEFAULT_Ki   1.62
+    #define DEFAULT_Kd 41.7
     // UM2+ (Olsen Block)
     //#define DEFAULT_Kp  10.03
     //#define DEFAULT_Ki   1.50
@@ -1258,7 +1258,7 @@
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
-  #define MAX_FEEDRATE_EDIT_VALUES    { 600, 600, 10, 50 } // ...or, set your own edit limits
+  #define MAX_FEEDRATE_EDIT_VALUES    { 600, 600, 120, 50 } // ...or, set your own edit limits
 #endif
 
 /**
@@ -1271,7 +1271,7 @@
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
-  #define MAX_ACCEL_EDIT_VALUES       { 6000, 6000, 200, 20000 } // ...or, set your own edit limits
+  #define MAX_ACCEL_EDIT_VALUES       { 9000, 9000, 200, 20000 } // ...or, set your own edit limits
 #endif
 
 /**
@@ -1304,7 +1304,7 @@
 #if ENABLED(CLASSIC_JERK)
   #define DEFAULT_XJERK 20.0
   #define DEFAULT_YJERK 20.0
-  #define DEFAULT_ZJERK  0.4
+  #define DEFAULT_ZJERK  0.3
   //#define DEFAULT_IJERK  0.3
   //#define DEFAULT_JJERK  0.3
   //#define DEFAULT_KJERK  0.3

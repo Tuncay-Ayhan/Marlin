@@ -17,7 +17,9 @@ This is the most recent unofficial  Ultimaker 2 Go Firmware, based on the latest
 
 <h2>Config changes</h2>
 <p>
-I've used the Ultimaker 2 as the base config and changed everything to fit the Ultimaker 2 Go. I've also utilized some (new) Marlin firmware options, like:
+I've used the Ultimaker 2 as the base config and changed everything to fit the Ultimaker 2 Go. I've also utilized some (new) Marlin firmware features.
+
+<b>Pro Tip</b>: Make sure to do a PID-tune for both your hotend and bed
 
 <hr>
 
@@ -70,7 +72,7 @@ I've used the Ultimaker 2 as the base config and changed everything to fit the U
 - BABYSTEPPING = TRUE
 - BABYSTEP_WITHOUT_HOMING = TRUE
 - BABYSTEP_ALWAYS_AVAILABLE = TRUE
-- FILAMENT_CHANGE_UNLOAD_LENGTH = 576
+- FILAMENT_CHANGE_UNLOAD_LENGTH = 590
 - FILAMENT_CHANGE_FAST_LOAD_LENGTH = 560
 - SOUND_ON_DEFAULT = FALSE
 - PWM_MOTOR_CURRENT { 1300, 1300, 1400 }
